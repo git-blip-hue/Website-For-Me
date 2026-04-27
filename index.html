@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Personal website — replace this with your bio." />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b7285" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">YourName</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hi — I'm Your Name</h1>
+        <p class="lead">A short tagline about what you do. Developer. Designer. Maker.</p>
+        <p>
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Replace this paragraph with a short bio, your skills, and what kind of work you do.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript / TypeScript</li>
+        <li>Node / Static sites</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Short description of project one. Link to repo or demo.</p>
+          <p><a href="#" class="link">View project →</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Short description of project two. Link to repo or demo.</p>
+          <p><a href="#" class="link">View project →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach me, send an email or use the form below.</p>
+      <form id="contactForm" class="contact-form" action="#" onsubmit="return handleForm(event)">
+        <label>
+          <span>Name</span>
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p id="formMessage" class="muted"></p>
+      </form>
+      <p class="muted">Or email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
